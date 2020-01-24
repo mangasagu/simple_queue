@@ -49,8 +49,6 @@ simple_queue::simple_queue( const uint8_t item_size, const uint16_t items_max, c
 
     _queue_circular  = circular_queue;
 
-    ESP_LOGD( TAG_LIST, "sizeof(_queue_item_t) %d", sizeof(_queue_item_t) );
-
     clear();
 };
 
